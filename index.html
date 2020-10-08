@@ -33,7 +33,7 @@
 
         // Cesium
         Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJhN2NmMjJkOS0wMDQ5LTRmOGMtOGM5My1iODljMGZmYTg4OWUiLCJpZCI6MzUyMDMsImlhdCI6MTYwMTQ5NjQ1MX0.33fp2rPMyMGHFUNU-ESjvSomknVSBrV5eKEbTkSZFL4';
-        const glob = new Cesium.Globe();
+        const glob = new Cesium.Globe(Cesium.Ellipsoid.MOON);
         glob.showGroundAtmosphere = false;
         const viewer = new Cesium.Viewer("cesiumContainer", {
             skyAtmosphere: false,
@@ -45,6 +45,7 @@
                 style: 'default',
                 tileMatrixSetID: 'default028mm',
                 format: 'image/jpeg',
+                tilingScheme: new Cesium.GeographicTilingScheme(),
                 credit: new Cesium.Credit('nasa jpl trek')
             }),
         });
