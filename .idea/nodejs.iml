@@ -8,5 +8,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="@types/socket.io" level="application" />
+    <orderEntry type="library" name="@types/cesium" level="application" />
+    <orderEntry type="library" name="@types/socket.io-client" level="application" />
   </component>
 </module>
