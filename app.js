@@ -9,8 +9,8 @@ const options = {};
 
 // IP Address and Port of the server
 // 127.0.0.1 is localhost
-const hostname = '192.168.1.24';
-const port = '8080';
+// const hostname = '127.0.0.1';
+const port = '80'; // Port 80 for HTTP # Need to convert to HTTPS for safe data transfer
 
 // Create the HTTP Server
 const server = http.createServer();
@@ -95,6 +95,6 @@ io.on('connection', socket => {
     })
 });
 
-server.listen(port, hostname, () => {
-    console.log(`Server running at http://${hostname}:${port}/`)
+server.listen(port, () => {
+    // console.log(`Server running at http://${hostname}:${port}/`)
 })
