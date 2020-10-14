@@ -10,7 +10,7 @@ const options = {};
 // IP Address and Port of the server
 // 127.0.0.1 is localhost
 const hostname = '0.0.0.0';
-const port = '80'; // Port 80 for HTTP # Need to convert to HTTPS for safe data transfer
+const port = '3001'; // Port 3001 since you cant use <1024 on amazon EC2 without root
 
 // Create the HTTP Server
 const server = http.createServer();
