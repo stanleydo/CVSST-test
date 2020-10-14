@@ -9,7 +9,7 @@ const options = {};
 
 // IP Address and Port of the server
 // 127.0.0.1 is localhost
-const hostname = '13.57.203.51'; // EC2 server ip
+const hostname = '0.0.0.0';
 const port = '80'; // Port 80 for HTTP # Need to convert to HTTPS for safe data transfer
 
 // Create the HTTP Server
